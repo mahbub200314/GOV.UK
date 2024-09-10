@@ -1,0 +1,688 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+.herosection{
+    padding-top: 40px;
+    background-image: url("herosection.png");
+    background-blend-mode: darken  ;
+    background-color: rgb(0, 0, 0, 0.6);
+     background-size: cover;
+     background-position: center;
+     
+     min-height: 60vh;
+     padding-bottom: 100px;
+   
+     mask-image: linear-gradient(black,transparent);
+
+     -webkit-mask-image: linear-gradient(black 80%,transparent 100%);
+ 
+    
+}
+.navbar{
+    background-color: rgb(29, 112, 184);
+    
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    height: 60px;
+    
+    margin-left:5%;
+    margin-right:5%;
+    border: 1px solid  transparent;
+    border-radius:10px ;
+    padding:0px 1.5%;
+    
+}
+
+.logo img{
+    filter: brightness(0) invert(1);
+
+}
+
+.nav{
+    display: flex;
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+.navbar .logo img{
+    width: 40px;
+}
+
+.nav .searchbar{
+    
+    color:#fff;
+    margin-right: 10px;
+
+}
+
+.space{
+    width: 3px;
+    height:20px;
+    background-color:#fff;
+    margin-right: 15px;
+    border-radius:10px ;
+
+}
+
+
+.front-look{
+    
+    
+    padding-top:100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+}
+
+.first{
+width: 55%;
+padding: 2% 10%;
+color:#fff;
+
+}
+
+.first h1{
+font-size: 65px;
+
+font-weight:bold;
+}
+.first h3{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.second{
+    
+    width: 45%;
+    color:#fff;
+    padding-right:5%;
+    padding-top:15%
+    
+
+    
+    
+  
+}
+.two{
+    text-align: center;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+    
+    
+}
+
+.two p{
+    font-size: 5rem;
+    
+    font-weight: bold;
+    top:-65px;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+    
+   
+}
+
+.search{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    
+    border-radius: 15px;
+    border:1px solid transparent;
+    z-index: +1;
+    box-shadow: -1px  -10px 15px rgb(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+.search input{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+    border:1px solid transparent;
+    padding:5px;
+
+}
+
+.search i{
+    position: absolute;
+    
+    right: -1%;
+    font-size: 25px;
+    color:rgb(29, 112, 184);
+    background-color: transparent;
+    height: 100%;
+    padding:1%;
+    padding-right: 15px;
+    padding-top: 18px;
+    padding-left: 20px;
+    border-left: 3px solid rgb(29, 112, 184);
+    cursor: pointer;
+    z-index: 1;
+    background-color: #FFF;
+    
+}
+
+@media (max-width:978px ){
+    .front-look{
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    .first{
+    width:100%;
+    margin-bottom:50px;
+
+    }
+    .second{
+        width:100%;
+        align-items: center;
+        justify-content: left;
+        padding:5% 20%;
+
+
+    }
+    .two p{
+        font-size: 4rem;
+        top:-55px
+    }
+
+   
+}
+
+@media (max-width:670px){
+.two {
+  padding-right:0%;  
+
+}
+.second{
+    padding-right:2% ;
+    padding-left:2% ;
+}
+}
+
+
+
+
+
+
+
+
+
+/*************popular gov uk**********/
+
+.heading{
+    text-align: center;
+    margin-top: 50px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2% 5%;
+    
+}
+
+.card{
+    width:250px;
+    border:1px solid transparent;
+    min-height: 130px;
+    margin: 2% 5%;
+    border-radius:10px;
+    color:#fff;
+    padding:10px 25px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card h5{
+    display: flex;
+    justify-content: end;
+
+}
+
+.card h5 i{
+    padding:10px;
+    color:black;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card h5 i:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+hr{
+    margin:1px 10%;
+    height: 3px;
+    background-color: rgb(12, 140, 233);
+    border:1px solid transparent;
+    opacity: 0.5;
+}
+
+
+/*************popular gov uk end **********/
+
+
+
+
+/*******data start***********/
+
+.data{
+    width: 100%;
+    min-height: 150vh;
+    display: flex;
+    margin-top:50px;
+}
+.data .information{
+    width:60%;
+    padding:10px 5%;
+
+}
+
+header{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    margin-bottom:30px;
+
+}
+
+header h2{
+    font-size: 30px;
+}
+
+header hr{
+    width:105%;
+    margin:0px;
+    background: rgb(36, 35, 35);
+    border-radius: 10px;
+
+}
+
+
+.cotainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.data .vr{
+    width:1%;
+    display: flex;
+    align-items: center;
+    margin:0px 2%;
+}
+.content-more i{
+    cursor: pointer;
+}
+.vr hr{
+    display: flex;
+    height: 90%;
+    width:1px;
+    background-color: rgb(12, 140, 233);
+    opacity: 0.4;
+
+}
+.data .featured{
+width: 39%;
+}
+
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(218, 233, 246);
+    
+    padding:10px;
+
+    
+}
+
+.content2{
+    background-color: #fff;
+    border-left: 5px solid rgb(12, 140, 233);
+}
+
+.content p{
+    margin:7px 0px
+}
+
+.feauterd-content{
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 215, 230);
+    border-left: 15px solid brown;
+    border-radius: 10px;
+    width: fit-content;
+    padding-right:15px;
+    margin: 20px 10px
+}
+
+
+
+
+.feauterd-content .under-content p{
+    margin-top:10px ;
+}
+
+.document {
+    background-color: rgb(219, 213, 233);
+    border-left: 15px solid rgb(8, 52, 91);
+
+}
+
+.living{
+    background-color: rgb(191, 227, 224);
+    border-left: 15px solid rgb(14, 74, 14);
+}
+
+@media (max-width:690px){
+
+    .data{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+
+
+    .data .information{
+        width: 100%;
+    }
+
+    .data .featured{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        flex-direction: column;
+    }
+}
+
+
+
+/*********** more information **********/
+
+hr{
+    margin-top: 50px;
+}
+
+.more-data{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    margin-top:50px;
+}
+
+
+
+
+
+header{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    margin-bottom:30px;
+
+}
+
+header h2{
+    font-size: 30px;
+}
+
+header hr{
+    width:105%;
+    margin:0px;
+    background: rgb(36, 35, 35);
+    border-radius: 10px;
+
+}
+
+
+
+.moreinformation{
+    width:60%;
+    padding:10px 5%;
+}
+
+.moreinfontmation2{
+    width: 40%;
+}
+
+
+.box{
+    background-color: rgb(232, 241, 248);
+    padding: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.box a{
+margin: 10px 10px;
+}
+
+
+@media (max-width:690px){
+
+    .more-data{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+
+
+    .more-data .moreinformation{
+        width: 100%;
+    }
+
+    .more-data .moreinfontmation2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        flex-direction: column;
+        margin:20px;
+    }
+}
+
+
+
+
+
+/******footer1 start***********/
+
+.footer1{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    background-color: rgb(29, 112, 184);
+    padding-top:75px;
+    padding-bottom:20px;
+    padding-left:7%;
+    padding-right: 7%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer1 header h2{
+
+color:#fff;
+
+}
+
+@media(max-width:346px){
+    .footer1 header h2{
+
+        font-size: 25px;
+
+        
+        }
+}
+
+.footer1 header hr{
+
+    background-color: #ddd;
+
+    }
+.footer1-under-div{
+    display: flex;
+    
+    
+}
+.footer-first-div{
+   margin-bottom: 40px;
+}  
+.under-div{
+
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+
+}
+
+.under-div a{
+    color:#fff;
+    margin:10px;
+}
+
+
+
+.footer2{
+    min-height: 20vh;
+    background-color: rgb(29, 112, 184);
+    padding:20px 7%;
+    color:#fff;
+}
+
+.under-div2 a{
+color:#fff;
+margin:20px 10px;
+
+}
+
+
+.footer2 hr{
+    height: 3px;
+    margin: 0%;
+     background-color:#fff;
+}
+.div2{
+    margin-top: 10px;
+    margin-bottom:10px
+}
+.div3{
+    margin-top:10px
+}
+.para{
+    margin:10px;
+}
+
+.para span{
+    font-weight: bold;
+    font-style:oblique;
+    font-size: 20px;
+    color:#fbeeee
+}
+.under-div2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img img{
+    width:100px;
+    height: 100px;
+    filter: brightness(0) invert(1);
+}
